@@ -1,0 +1,134 @@
+
+  /* Login container */
+  .entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    margin-left: 100px; /* Added margin */
+    margin-right: 100px; /* Added margin */
+  }
+  
+  /* Image styles */
+  .loginPic {
+    max-width: 100%;
+    width: 500px; /* Set a fixed width for the image */
+  }
+  
+  /* Text container styles */
+  .entryText {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .entryText h1 {
+    margin-bottom: 10px;
+    font-size: 6rem;
+  }
+  
+  .entryText h3 {
+    margin-bottom: 24px;
+    font-size: 1.2em;
+    /* word-spacing: 10px;  */
+  }
+/* Button styles */
+
+/* .btn-signup,
+.btn-login {
+  
+  padding: 10px 20px;
+
+  font-size: 1em;
+  background-color: rgba(211, 229, 254, 1);
+  
+  border: 2px solid  rgb(26, 42, 65, 0.9);
+  border-radius: 19px;
+  width:150px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+
+/* .btn-signup{
+    background-color: rgb(26, 42, 65, 0.9);
+    color:white;
+}
+
+.btn-login{
+    margin-left: 20px;
+    color:  rgb(26, 42, 65, 0.9);
+} */
+
+.signup-btn
+{
+  padding: 10px 20px;
+
+  font-size: 1em;
+  border: 3px solid  rgb(26, 42, 65, 0.9);
+  border-radius: 19px;
+  width:150px;
+  cursor: pointer;
+  color:white;
+  background-color:  rgb(26, 42, 65, 0.9); 
+  
+
+}
+
+.login-btn
+{
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 19px;
+  font-size: 1em;
+  border: 3px solid  rgb(26, 42, 65, 0.9);
+  color: rgb(26, 42, 65, 0.9);
+}
+
+.signup-btn:hover,.login-btn:hover{
+color:white;
+background-color:#1E90FF;
+border: 3px solid #1E90FF;
+
+}
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .entry{
+      flex-direction: column;
+      margin-left: 20px; /* Adjusted margin for smaller screens */
+      margin-right: 20px; /* Adjusted margin for smaller screens */
+      margin-top: 10px;
+      /* margin-bottom: 10px; */
+    }
+  
+    .entryText {
+      padding: 10px;
+    }
+    .loginPic
+    {
+      width: 300px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+   
+    .entryText h1 {
+      font-size: 1.5em;
+    }
+    .loginPic
+    {
+      width: 300px; 
+    }
+   .entryText h3 {
+      font-size: 1em;
+    }
+  
+    .btn-signup,.btn-login{
+      font-size: 0.9em;
+      margin:5px;
+    }
+    .btn-login{
+        margin-left: 0px
+  }
+}
