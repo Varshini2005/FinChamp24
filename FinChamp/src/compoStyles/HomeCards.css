@@ -1,0 +1,95 @@
+.HomeCards
+{
+   width: 220px;
+   height:250px;
+
+   background-color:bisque;
+   border: 10px shadow black;   
+   margin: 0 auto;
+   margin-left: 20px;
+
+
+   background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card-image
+{
+  width: 75px;
+  margin: 20px;
+  margin-left:20px;
+
+  /* object-fit: cover; */
+
+}
+
+.card-image :hover
+{
+
+}
+
+  
+  .card-text h2 {
+    font-size: 1.5em;
+    /* margin: 10px 0; */
+  }
+  
+  .card-text button {
+    background-color: #007bff;
+    
+     /* background-color: pink; */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+  }
+  
+  .card-text button:hover {
+    background-color: #0056b3;
+  }
+  .card-text button:active {
+    background-color: #004494;
+    transform: scale(0.98);
+  }
+
+  @media (max-width: 963px) {
+
+    .HomeCards{
+      width:150px;
+      height:150px;
+      margin-left:50px;
+    }
+    .card-text h2 {
+      font-size: 1em;
+     
+    }
+    .card-text{}
+
+    .card-text button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      width:100px;
+    
+     
+    }
+    .card-image
+{
+  width: 50px;
+  margin: 20px;
+
+
+}
+    
+
+
+  }

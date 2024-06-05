@@ -1,0 +1,38 @@
+/* Base Footer Styles */
+.footer {
+    background-color: rgb(102, 150, 212);
+      padding: 20px;
+      text-align: center;
+      
+      bottom: 0;
+    }
+    
+    .footer .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #2f234f;
+    }
+    
+    /* Media Queries for Short and Long Devices */
+    
+    /* For Short Devices (Max-width 600px) */
+    @media (max-width: 600px) {
+      .footer .container {
+        padding-left: 15px; /* Adjust as needed for short devices */
+      }
+    }
+    
+    /* For Long Devices (Min-width 1200px) */
+    @media (min-width: 1200px) {
+      .footer .container {
+        padding-left: 700px; /* Adjust as needed for long devices */
+      }
+    }
+    

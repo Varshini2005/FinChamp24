@@ -1,0 +1,132 @@
+
+.selection-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    margin-left: 100px; 
+    margin-right: 100px; 
+  }
+  
+.selection-title
+{
+    margin:10px;
+    font-size: 30px;
+}
+  .loginPic {
+    max-width: 100%;
+    width: 500px; 
+  }
+  
+  .selection-text {
+  
+    margin-left: 30px;
+  }
+   
+
+ 
+  .error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+  .category-submit
+  {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 19px;
+    width:150px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ 
+    margin-top: 20px;
+    background-color: rgb(26, 42, 65, 0.9);
+    color:white;
+    margin-bottom: 9px;
+}
+
+.category-btn:active {
+    transform: translateY(2px);
+  }
+.dropdown
+{
+    margin:10px;
+    padding: 2px;
+  
+}
+
+
+
+.category-submit:active {
+    transform: translateY(2px);
+  }
+
+
+  
+  .category-btn {
+    margin: 5px;
+
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color:white;;
+    /* border-radius: 20px; */
+    border: 2px solid white;
+    transition: background-color 0.3s ease;
+
+  }
+
+  .btn-box
+  {
+    margin:6px;
+  }
+
+    .category-btn:hover {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    /* border-radius: 30px; */
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+  }
+
+  .category-submit:hover {
+    background-color: rgba(0, 123, 255, 0.8); 
+    border: 2px solid  rgba(0, 123, 255, 0.8); 
+}
+
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .selection-page {
+      flex-direction: column;
+      margin-left: 5px; 
+      margin-right: 5px; 
+    }
+
+    .loginPic
+    {
+      width:300px;
+      margin-top: 100px;
+    }
+    .selection-text {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      margin-left: 0px;
+    }
+    .selection-title {
+      padding: 10px;
+    }
+    .dropdown
+{
+    margin: 5px;
+    padding: 2px;
+  
+}
+
+  }
+  
+  
+ 

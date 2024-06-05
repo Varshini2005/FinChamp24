@@ -1,0 +1,117 @@
+
+.topic-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    margin-left: 100px; 
+    margin-right: 100px; 
+  }
+  
+.topic-title
+{
+    margin:10px;
+    font-size: 30px;
+    font-size: 3rem;
+}
+  .loginPic {
+    max-width: 100%;
+    width: 500px; 
+  }
+  
+  .topic-text {
+  
+    margin-left: 30px;
+  }
+   
+
+
+ 
+  .error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+  .topic-submit
+  {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 19px;
+    width:150px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ 
+    margin-top: 20px;
+    background-color: rgb(26, 42, 65, 0.9);
+    color:white;
+    margin-bottom: 9px;
+}
+
+
+
+
+.topic-submit:active {
+    transform: translateY(2px);
+  }
+
+/* Default button styles */
+.topic-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Selected button styles */
+  .topic-button.selected {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .topic-button:active {
+    transform: translateY(2px);
+  }
+  
+  .topic-submit:hover {
+    background-color: rgba(0, 123, 255, 0.8); 
+    border: 2px solid  rgba(0, 123, 255, 0.8); 
+}
+.topic-button:active {
+    transform: translateY(2px);
+  }
+
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .topic-page {
+      flex-direction: column;
+      margin-left: 5px; 
+      margin-right: 5px; 
+    }
+    .topic-button {
+        padding: 8px 16px;
+      }
+
+    .loginPic
+    {
+      width:300px;
+      margin-top: 100px;
+    }
+    .topic-text {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      margin-left: 0px;
+    }
+    .topic-title {
+      padding: 10px;
+    }
+ 
+
+  }
+  
+  
+ 

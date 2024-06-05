@@ -1,0 +1,219 @@
+/* Navbar.css */
+
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcfcfc;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  height: 60px;
+  background-color: rgb(102, 150, 212);
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+}
+
+.logos img {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: #2f234f;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+  display: flex;
+  align-items: center;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-elements ul li {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #574c4c;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .nav-elements ul li {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #fef7e5;
+    width: 270px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul {
+    margin-top: 20px;
+  }
+
+  .nav-elements ul li {
+    margin-right: 0;
+    margin-bottom: 22px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+}
+/* Style the dropdown button (the element that opens the dropdown content) */
+.dropdown-btn {
+  background-color: #fff; /* White background color */
+  color: black; /* Text color */
+  padding: 12px 16px; /* Padding */
+  border: none; /* Remove default border */
+  font-size: 16px; /* Font size */
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none; /* Initially hidden */
+  position: absolute; /* Position the dropdown content within the container */
+  background-color: #fff; /* White background color */
+  min-width: 160px; /* Minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Light shadow */
+  z-index: 1; /* Ensure dropdown is above other elements */
+}
+
+/* Style the dropdown content (when the dropdown is hovered over) */
+.dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown content on hover */
+}
+
+/* Style the dropdown options (links) */
+.dropdown-content a {
+  color: black; /* Text color */
+  padding: 12px 16px; /* Padding */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the options display as blocks */
+}
+
+/* Style the dropdown options (hover effect) */
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+}
+/* Style the user profile section */
+.user-profile {
+  position: relative; /* Needed for proper dropdown positioning */
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 32px; /* Adjust width as needed */
+  height: 32px; /* Adjust height as needed */
+  border-radius: 50%; /* Create a circular profile image */
+  cursor: pointer; /* Indicate interactivity on hover */
+}
+
+/* Style the profile dropdown menu */
+.profile-dropdown {
+  position: absolute; /* Position the dropdown menu relative to the user profile image */
+  top: 100%; /* Position the menu below the image */
+  left: 0; /* Align the left edge of the menu with the image */
+  width: 150px; /* Adjust width as needed */
+  background-color: #fff; /* Set white background */
+  border-radius: 4px; /* Add subtle rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a light shadow for depth */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  z-index: 10; /* Ensure the dropdown appears above other elements */
+  opacity: 0; /* Initially hide the dropdown */
+  visibility: hidden; /* Initially hide the dropdown (optional for better performance) */
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out; /* Smooth fade-in/out animation */
+}
+
+/* Style the dropdown menu items */
+.profile-dropdown li {
+  padding: 10px 15px; /* Add spacing between menu items */
+  cursor: pointer; /* Indicate interactivity on hover */
+}
+
+.profile-dropdown li:hover {
+  background-color: #f5f5f5; /* Add subtle hover background */
+}
+
+/* Show the dropdown menu on hover */
+.user-profile:hover .profile-dropdown {
+  opacity: 1;
+  visibility: visible; /* Make the dropdown visible */
+}
+.imgp{
+  height:30px;
+  width:30px
+}
