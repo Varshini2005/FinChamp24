@@ -71,8 +71,9 @@ const LoginPage = () => {
                 disabled={!isFormValid}
               >
               Login
-              </button>
+              </button>        <span className='password-reset'>Forgot Password?</span>
             </div>
+    
           </form>
 
           <div className="sign-up-option">

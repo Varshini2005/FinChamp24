@@ -1,0 +1,23 @@
+.finance-topics {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 20px;
+    padding: 20px;
+    /* background-color: #f5f5f5; */
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  
+@media (max-width: 963px) {
+
+ .finance-topics
+ {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+ } 
+
+
+}

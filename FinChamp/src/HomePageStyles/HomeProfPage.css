@@ -1,0 +1,85 @@
+.home-news
+{
+    height: 400px;
+    background-color: azure;
+}
+.home-cards
+{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: white;
+}
+.retiree-loan
+{
+    height: 250px;
+    background-color: rgb(26, 42, 65, 0.9);
+   color: white;
+    /* margin-right : 200px;
+    margin-left: 200px; */
+    display: flex;
+}
+.retiree-blogs
+{
+    height:500px;
+    background-color: white;
+}
+
+@media (max-width : 1200px)
+{
+    .home-cards
+    {
+        flex-direction: column;
+        height: 1000px; 
+        flex-wrap: wrap;
+    }
+}
+
+  
+@media (max-width: 963px) {
+
+    .retiree-loan
+    {
+        flex-direction: column;
+        height: 290px;
+        align-items: center;
+    } 
+    .home-cards
+    {
+        flex-direction: column;
+        height: 1400px; 
+        flex-wrap: wrap;
+        /* margin-right: 100px; */
+    }
+}
+
+@media(max-width: 400px)
+{
+    
+        .retiree-loan
+        {
+            flex-direction: column;
+            height: 300px;
+        } 
+        .home-cards {
+    
+        justify-content: center;
+     
+         
+          }
+
+
+}
+
+@media (max-width: 1460px) and (min-width: 1200px) {
+    .retiree-loan {
+      flex-direction: column;
+      height: 900px;
+    }
+    .home-cards {
+    
+      height: 800px;
+      flex-wrap: wrap;
+
+    }
+  }

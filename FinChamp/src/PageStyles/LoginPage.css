@@ -41,7 +41,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 
-    margin-top: 20px;
+    margin-top: 25px;
     background-color: rgb(26, 42, 65, 0.9);
     color:white;
     margin-bottom: 9px;
@@ -59,10 +59,11 @@
   border-radius: 15px;
   margin-bottom: 5px;
 }
-
-  
-  
-
+.password-reset
+{
+  margin-left: 3px;
+  font-size: 15px;
+}
   /* Responsive design */
   @media (max-width: 768px) {
     .login {
