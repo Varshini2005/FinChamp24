@@ -59,6 +59,36 @@ const main = async () => {
                 order: 1,
                 title: "What are stocks?",
             },
+            {
+                id: 2,
+                unitId: 1,
+                order: 2,
+                title: "What are the type of stocks?",
+            },
+            {
+                id: 3,
+                unitId: 1,
+                order: 3,
+                title: "how to?",
+            },
+            {
+                id: 4,
+                unitId: 1,
+                order: 4,
+                title: "What type of stocks?",
+            },
+            {
+                id: 5,
+                unitId: 1,
+                order: 5,
+                title: "What are the type of stocks?",
+            },
+            {
+                id: 6,
+                unitId: 1,
+                order: 6,
+                title: "What are the type of stocks?",
+            },
         ]);
 
         await db.insert(schema.challenges).values([

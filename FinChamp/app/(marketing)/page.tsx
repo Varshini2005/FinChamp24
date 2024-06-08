@@ -10,8 +10,7 @@ import {
   SignInButton
 } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
-// import Link from "next/link";
-import './globals.css';
+// import "./globals.css";
 import Link from "next/link";
 
 export default function Home() {
@@ -32,6 +31,7 @@ export default function Home() {
           <SignedOut>
             <SignUpButton
             mode="modal"
+            //@ts-ignore
             afterSignUpUrl="/courses"
             >
               <Button size="lg" variant="secondary"
@@ -42,6 +42,7 @@ export default function Home() {
             
             <SignInButton
             mode="modal"
+            //@ts-ignore
             afterSignInUrl="/learn"
             
             >
