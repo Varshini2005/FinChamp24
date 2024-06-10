@@ -3,6 +3,9 @@ import { Montserrat } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import { Toaster } from "sonner";
+import { ExitModal } from "@/components/modals/exit-modal";
+import { HeartsModal } from "@/components/modals/hearts-modal";
+import { PracticeModal } from "@/components/modals/practice-modal";
 
 const font = Montserrat({ subsets: ["latin"] });
 
@@ -21,7 +24,11 @@ export default function RootLayout({
       <html lang="en">
       <body className={font.className}>
         <Toaster />
-        {children}</body>
+        <ExitModal/>
+        <HeartsModal/>
+        <PracticeModal/>
+        {children}
+        </body>
     </html>
     </ClerkProvider>
   );

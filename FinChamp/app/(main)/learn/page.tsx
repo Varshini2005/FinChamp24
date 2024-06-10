@@ -2,23 +2,34 @@ import { FeedWrapper } from "@/components/feed-wrapper";
 import { StickyWrapper } from "@/components/sticky-wrapper";
 import { Header } from "./header";
 import { UserProgress } from "@/components/user-progress";
-import { getUnits, getUserProgress } from "@/db/queries";
+import { getUnits, getUserProgress, getCourseProgress, getLessonPercentage } from "@/db/queries";
 import { redirect } from "next/navigation";
 import { Unit } from "./unit";
+import { Promo } from "@/components/promo";
 
 const LearnPage = async () => {
     const userProgressData = getUserProgress();
+    const courseProgressData = getCourseProgress();
+    const lessonPercentageData = getLessonPercentage();
     const unitsData = getUnits();
 
     const [
         userProgress,
         units,
+        courseProgress,
+        lessonPercentage,
     ] = await Promise.all([
         userProgressData,
         unitsData,
+        courseProgressData,
+        lessonPercentageData,
     ]);
 
     if (!userProgress || !userProgress.activeCourse) {
+        redirect("/courses");
+    }
+
+    if (!courseProgress) {
         redirect("/courses");
     }
 
@@ -31,7 +42,12 @@ const LearnPage = async () => {
                 points={userProgress.points}
                 // hasActiveSubscriptiom={false}
                 />
+               {/* <div className="flex justify-end -ml-50"> */}
+            {/* <Promo /> */}
+            {/* </div> */}
+                
             </StickyWrapper>
+            
             <FeedWrapper>
                <Header title={userProgress.activeCourse.title}/>
                {units.map((unit) => (
@@ -42,12 +58,13 @@ const LearnPage = async () => {
                         description={unit.description}
                         title={unit.title}
                         lessons={unit.lessons}
-                        activeLesson={undefined}
-                        activeLessonPercentage={0}
+                        activeLesson={courseProgress?.activeLesson}
+                        activeLessonPercentage={lessonPercentage}
                     />
                 </div>
                ))}
             </FeedWrapper>
+            
         </div>
     );
 };
