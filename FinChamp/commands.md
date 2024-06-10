@@ -12,6 +12,7 @@ for installing drizzle-kit for database,
 npm install drizzle-kit@latest
 npm i dotenv 
 
+
 for running:
 
 npm run dev
